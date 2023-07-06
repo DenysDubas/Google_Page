@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Google</title>
+    <script>
+        function toggleImages() {
+          const img = document.querySelector('img[src="./imgs/google.png"]');
+          const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+          svg.setAttribute("width", "200");
+          svg.setAttribute("height", "90");
+          svg.setAttribute("viewBox", "0 0 89 36");
+          svg.setAttribute("fill", "none");
+          svg.innerHTML = `
+            <path class="logo-white" d="M53.5035 5.50186H54.9165L54.4002 9.42248L58.2469 3.69397H56.9383L57.5022 0L53.5035 5.50186Z"></path>
+            <path d="M53.5035 5.50186H54.9165L54.4002 9.42248L58.2469 3.69397H56.9383L57.5022 0L53.5035 5.50186Z"></path>
+            <path class="logo-white" d="M46.5244 11.8018H37.06V27.2245C37.06 29.5665 33.241 30.0211 33.241 32.167V36.0001H42.7054L45.0824 33.6144V26.1601C45.0824 24.0302 48.9014 23.8168 48.9014 21.6881V14.1822L46.5244 11.8018ZM41.2831 29.992C41.2831 30.8257 41.2831 31.5149 41.2831 31.5149V32.3101H37.0362V30.1894C37.0362 27.2271 40.8223 27.6526 40.8223 25.0971C40.8223 22.5417 40.8553 15.2306 40.8553 15.2306H44.3112L45.1035 16.0259V22.7564C45.1035 24.0951 45.0005 24.673 43.5188 25.7373C41.88 26.9011 41.2831 26.8242 41.2831 29.992Z"></path>
+            <path class="logo-white" d="M69.3185 15.2303V35.9998H65.5694V15.2303H61.5034V11.7842H73.3884V15.2303H69.3185Z"></path>
+            <path class="logo-white" d="M57.5524 15.2554V35.9997H53.8033V11.7881H57.5524V15.2554Z"></path>
+            <path class="logo-white" d="M29.1222 11.8018H19.6564V27.2245C19.6564 29.5665 15.8374 30.0211 15.8374 32.167V36.0001H25.3031L27.6801 33.6144V26.1601C27.6801 24.0302 31.4992 23.8168 31.4992 21.6881V14.1822L29.1222 11.8018ZM23.8809 29.992C23.8809 30.8257 23.8809 31.5149 23.8809 31.5149V32.3101H19.634V30.1894C19.634 27.2271 23.42 27.6526 23.42 25.0971C23.42 22.5417 23.453 15.2306 23.453 15.2306H26.9076L27.6999 16.0259V22.7564C27.6999 24.0951 27.5969 24.673 26.1153 25.7373C24.4817 26.9011 23.8809 26.8242 23.8809 29.992Z"></path>
+            <path class="logo-white" d="M85.1756 11.8018L82.3061 20.5178L79.4365 11.8018H75.6122L80.4309 25.0508V36.0001H84.1799V25.0508L88.9999 11.8018H85.1756Z"></path>
+            <path class="logo-white" d="M0 33.6064V14.1584L2.25551 11.8018H11.7635L14.1405 14.1703V21.3382C14.1405 23.0613 13.2755 23.2376 12.1398 23.9785C11.1864 24.5935 10.3188 24.9248 10.3188 26.1654V33.6197L7.94181 36.0054H2.25551L0 33.6064ZM3.79659 32.281H6.42714V31.67C6.42714 31.67 6.42714 30.0503 6.42714 29.4658C6.42714 28.5605 6.55919 27.2907 8.42249 25.903C9.96226 24.7565 10.3426 24.3324 10.3426 22.4304V15.1405H3.79659V32.281Z"></path>
+          `;
+          img.parentNode.replaceChild(svg, img);
+        }
+    </script>
+</head>
+<body>
+    <section>
+        <header class="header">
+            <ul class="header_nav_list">
+                <li class="header_nav_item"><a href="#">Gmail</a></li>
+                <li class="header_nav_item"><a href="#">Зображення</a></li>
+                <li class="header_nav_item">
+                    <a class="a_img" href="#">
+                        <svg width="24" height="24" viewBox="0 0 24 24">
+                          <path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path>
+                        </svg>
+                      </a>                      
+                </li>
+                <li class="header_nav_item"><button>Увійти</button></li>
+            </ul>
+        </header>
+        <main class="main">
+            <img src="./imgs/google.png" alt="google_img">
+            <div class="search_container">
+                <input type="text" class="input">
+                <div class="icons_container">
+                    <img class="search_img" src="./imgs/search.png" alt="search_img">
+                    <div class="right_input_icons">
+                        <img class="tia_img" src="./imgs/tia.png" alt="tia_img">
+                        <img class="micro_img" src="./imgs/mic.png" alt="micro_img">
+                        <svg focusable="false" viewBox="0 0 192 192" xmlns="http://www.w3.org/2000/svg" data-iml="1688566853654" width="24" height="22">
+                            <rect fill="none" height="19" width="19"></rect>
+                            <g>
+                            <circle fill="#34a853" cx="144.07" cy="144" r="16"></circle>
+                            <circle fill="#4285f4" cx="96.07" cy="104" r="24"></circle>
+                            <path fill="#ea4335" d="M24,135.2c0,18.11,14.69,32.8,32.8,32.8H96v-16l-40.1-0.1c-8.8,0-15.9-8.19-15.9-17.9v-18H24V135.2z"></path>
+                            <path fill="#fbbc05" d="M168,72.8c0-18.11-14.69-32.8-32.8-32.8H116l20,16c8.8,0,16,8.29,16,18v30h16V72.8z"></path>
+                            <path fill="#4285f4" d="M112,24l-32,0L68,40H56.8C38.69,40,24,54.69,24,72.8V92h16V74c0-9.71,7.2-18,16-18h80L112,24z"></path>
+                            </g>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn_shine">Пошук Google</button>
+                <button class="btn_shine" onclick="toggleImages()">Мені пощастить</button>
+            </div>
+            <div class="language_container">
+                <p class="language">Мова Google:</p>
+                <select name="" id="">
+                    <option value="">English</option>
+                    <option value="">Ukrainian</option>
+                </select>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer_container">
+                <p>Україна</p>
+                <div class="footer_bottom">
+                    <ul class="footer_bottom_nav_list">
+                        <li class="footer_bottom_nav_item"><a href="#">Про Google</a></li>
+                        <li class="footer_bottom_nav_item"><a href="#">Реклама</a></li>
+                        <li class="footer_bottom_nav_item"><a href="#">Для бізнесу</a></li>
+                        <li class="footer_bottom_nav_item"><a href="#">Як працює Пошук</a></li>
+                    </ul>
+                    <ul class="footer_bottom_nav_list">
+                        <li class="footer_bottom_nav_item"><a href="#">Конфіденційність</a></li>
+                        <li class="footer_bottom_nav_item"><a href="#">Умови</a></li>
+                        <li class="footer_bottom_nav_item"><a href="#">Налаштування</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
